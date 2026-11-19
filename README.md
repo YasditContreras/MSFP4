@@ -197,13 +197,13 @@ $$
 **Valor final en Control:**
 
 $$
-V_{s,\mathrm{control}}(\infty) = \frac{100\mathrm{k}\Omega}{1\mathrm{k}\Omega + 100\mathrm{k}\Omega} = \frac{100}{101} \approx 0.9901\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,control}} = 1 - 0.9901 = 0.0099\,\mathrm{V}.
+V_{s,\mathrm{control}}(\infty) = \frac{100\mathrm{k}\Omega}{1\mathrm{k}\Omega + 100\mathrm{k}\Omega} = \frac{100}{101} \approx 0.9901\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,control}} = 1 - 0.9901 = 0.0099\mathrm{V}.
 $$
 
 **Valor final en Caso:**
 
 $$
-V_{s,\mathrm{caso}}(\infty) = \frac{1\mathrm{k}\Omega}{1\mathrm{k}\Omega + 1\mathrm{k}\Omega} = \frac{1}{2} = 0.5000\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,caso}} = 1 - 0.5000 = 0.5000\,\mathrm{V}.
+V_{s,\mathrm{caso}}(\infty) = \frac{1\mathrm{k}\Omega}{1\mathrm{k}\Omega + 1\mathrm{k}\Omega} = \frac{1}{2} = 0.5000\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,caso}} = 1 - 0.5000 = 0.5000\mathrm{V}.
 $$
 
 El cambio de parámetros en el caso patológico provoca una caída del nivel hormonal estacionario de $0.99\mathrm{V}$ a $0.50\mathrm{V}$, generando un error en estado estacionario del $50$ % respecto al estímulo unitario y de $0.49\mathrm{V}$ respecto al individuo sano.
