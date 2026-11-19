@@ -66,10 +66,10 @@ La modificación simultánea de la capacitancia $C$ y la resistencia $R_2$ permi
 
 | Componente | Control (Individuo sano) | Caso (Hipertiroidismo simulado) |
 | --- | --- | --- |
-| $R_1$ | $1\mathrm{k}\Omega$ | $1\,\mathrm{k}\Omega$ |
-| $L$ | $100\mathrm{mH}$ | $100\,\mathrm{mH}$ |
-| $C$ | $1\mu\mathrm{F}$ | $1000\,\mu\mathrm{F}$ |
-| $R_2$ | $100\mathrm{k}\Omega$ | $1\,\mathrm{k}\Omega$ |
+| $R_1$ | $1\mathrm{k}\Omega$ | $1\mathrm{k}\Omega$ |
+| $L$ | $100\mathrm{mH}$ | $100\mathrm{mH}$ |
+| $C$ | $1\mu\mathrm{F}$ | $1000\mu\mathrm{F}$ |
+| $R_2$ | $100\mathrm{k}\Omega$ | $1\mathrm{k}\Omega$ |
 
 La entrada aplicada al sistema es un escalón unitario $V_e(t) = u(t)$, y la señal de error utilizada para el diseño del controlador se define como:
 
@@ -88,8 +88,6 @@ Palabras clave: Sistema endócrino; Analogía eléctrica RLC; Función de transf
 </p>
 
 *Figura 1. Representación biológica del modelo del sistema endócrino y correspondencia de sus componentes eléctricos elaborada en BioRender.com (Prado Acosta Briseida, Contreras Kenia Yasdit, Cerano Fuentes David Esau).*
-
-> **Nota para el repositorio:** Guarda la imagen en la carpeta `imagenes/` con el nombre `sistema_endocrino_biorender.png` (o actualiza la ruta en la etiqueta `<img>` según el nombre con el que la subas a GitHub).
 
 | Elemento | Estructura / Proceso biológico | Interpretación en el diagrama |
 | --- | --- | --- |
@@ -169,7 +167,7 @@ $$
 ### 3. Sustitución de parámetros: Control vs. Caso
 
 #### Condición Control (Individuo sano)
-Con $R_1 = 1\,\mathrm{k}\Omega$, $L = 100\,\mathrm{mH}$, $C = 1\,\mu\mathrm{F}$ y $R_2 = 100\,\mathrm{k}\Omega$:
+Con $R_1 = 1\mathrm{k}\Omega$, $L = 100\mathrm{mH}$, $C = 1\mu\mathrm{F}$ y $R_2 = 100\mathrm{k}\Omega$:
 - $R_1 L C = (10^3)(0.1)(10^{-6}) = 1 \times 10^{-4}$
 - $L + R_1 R_2 C = 0.1 + (10^3)(10^5)(10^{-6}) = 0.1 + 100 = 100.1$
 - $R_1 + R_2 = 1000 + 100\,000 = 101\,000$
@@ -179,7 +177,7 @@ G_{\mathrm{control}}(s) = \frac{100\,000}{10^{-4} s^2 + 100.1 s + 101\,000} = \f
 $$
 
 #### Condición Caso (Hipertiroidismo simulado)
-Con $R_1 = 1\,\mathrm{k}\Omega$, $L = 100\,\mathrm{mH}$, $C = 1000\,\mu\mathrm{F}$ y $R_2 = 1\,\mathrm{k}\Omega$:
+Con $R_1 = 1\mathrm{k}\Omega$, $L = 100\mathrm{mH}$, $C = 1000\mu\mathrm{F}$ y $R_2 = 1\mathrm{k}\Omega$:
 - $R_1 L C = (10^3)(0.1)(10^{-3}) = 0.1$
 - $L + R_1 R_2 C = 0.1 + (10^3)(10^3)(10^{-3}) = 0.1 + 1000 = 1000.1$
 - $R_1 + R_2 = 1000 + 1000 = 2000$
@@ -199,16 +197,16 @@ $$
 **Valor final en Control:**
 
 $$
-V_{s,\mathrm{control}}(\infty) = \frac{100\,\mathrm{k}\Omega}{1\,\mathrm{k}\Omega + 100\,\mathrm{k}\Omega} = \frac{100}{101} \approx 0.9901\,\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,control}} = 1 - 0.9901 = 0.0099\,\mathrm{V}.
+V_{s,\mathrm{control}}(\infty) = \frac{100\mathrm{k}\Omega}{1\mathrm{k}\Omega + 100\mathrm{k}\Omega} = \frac{100}{101} \approx 0.9901\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,control}} = 1 - 0.9901 = 0.0099\,\mathrm{V}.
 $$
 
 **Valor final en Caso:**
 
 $$
-V_{s,\mathrm{caso}}(\infty) = \frac{1\,\mathrm{k}\Omega}{1\,\mathrm{k}\Omega + 1\,\mathrm{k}\Omega} = \frac{1}{2} = 0.5000\,\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,caso}} = 1 - 0.5000 = 0.5000\,\mathrm{V}.
+V_{s,\mathrm{caso}}(\infty) = \frac{1\mathrm{k}\Omega}{1\mathrm{k}\Omega + 1\mathrm{k}\Omega} = \frac{1}{2} = 0.5000\mathrm{V} \quad \Rightarrow \quad e_{\mathrm{ss,caso}} = 1 - 0.5000 = 0.5000\,\mathrm{V}.
 $$
 
-El cambio de parámetros en el caso patológico provoca una caída del nivel hormonal estacionario de $0.99\,\mathrm{V}$ a $0.50\,\mathrm{V}$, generando un error en estado estacionario del $50$ % respecto al estímulo unitario y de $0.49\,\mathrm{V}$ respecto al individuo sano.
+El cambio de parámetros en el caso patológico provoca una caída del nivel hormonal estacionario de $0.99\mathrm{V}$ a $0.50\mathrm{V}$, generando un error en estado estacionario del $50$ % respecto al estímulo unitario y de $0.49\mathrm{V}$ respecto al individuo sano.
 
 ### 5. Análisis de estabilidad (Cálculo de polos)
 
