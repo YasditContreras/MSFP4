@@ -40,12 +40,12 @@ Modeliza sistemas fisiológicos mediante analogías eléctricas, ecuaciones dife
 
 El sistema endócrino participa en la regulación de numerosos procesos fisiológicos mediante la liberación de hormonas producidas por glándulas especializadas. Para estudiar su comportamiento dinámico mediante analogías eléctricas, se plantea un modelo fenomenológico simplificado de segundo orden construido bajo las siguientes hipótesis funcionales:
 
-1. **Estímulo fisiológico ($V_e(t)$):** Señal neural, metabólica o homeostática que inicia la secreción hormonal, representada mediante una fuente de voltaje.
+1. **Estímulo fisiológico ($V_e(t)$:** Señal neural, metabólica o homeostática que inicia la secreción hormonal, representada mediante una fuente de voltaje.
 2. **Transporte y pérdidas ($R_1$):** Oposición efectiva y retrasos asociados al transporte de la hormona desde la glándula hasta el compartimento efector.
 3. **Almacenamiento temporal ($C$):** Capacidad del compartimento para acumular temporalmente la señal hormonal antes de su utilización o eliminación.
 4. **Inercia y respuesta del tejido diana ($L$ y $R_2$):** Rama en serie conformada por una inductancia $L$ (retardo o resistencia dinámica a cambios rápidos) y una resistencia $R_2$ (oposición efectiva asociada a la utilización, disipación o eliminación hormonal).
-5. **Flujos hormonales ($F_e(t)$ y $F_s(t)$): ** Corrientes asociadas a la secreción/transporte hormonal y a la utilización/respuesta del órgano diana, respectivamente.
-6. **Nivel hormonal efectivo ($V_s(t)$): ** Variable de salida medida en el nodo de unión entre $R_1$, $C$ y $L$, que representa de manera normalizada la señal hormonal disponible para producir una respuesta metabólica.
+5. **Flujos hormonales ($F_e(t)$ y $F_s(t)$:** Corrientes asociadas a la secreción/transporte hormonal y a la utilización/respuesta del órgano diana, respectivamente.
+6. **Nivel hormonal efectivo ($V_s(t)$:** Variable de salida medida en el nodo de unión entre $R_1$, $C$ y $L$, que representa de manera normalizada la señal hormonal disponible para producir una respuesta metabólica.
 
 ### Analogía fisiológica–eléctrica
 
