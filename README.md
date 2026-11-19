@@ -66,10 +66,10 @@ La modificación simultánea de la capacitancia $C$ y la resistencia $R_2$ permi
 
 | Componente | Control (Individuo sano) | Caso (Hipertiroidismo simulado) |
 | --- | --- | --- |
-| $R_1$ | $1\,\mathrm{k}\Omega$ | $1\,\mathrm{k}\Omega$ |
-| $L$ | $100\,\mathrm{mH}$ | $100\,\mathrm{mH}$ |
-| $C$ | $1\,\mu\mathrm{F}$ | $1000\,\mu\mathrm{F}$ |
-| $R_2$ | $100\,\mathrm{k}\Omega$ | $1\,\mathrm{k}\Omega$ |
+| $R_1$ | $1\mathrm{k}\Omega$ | $1\,\mathrm{k}\Omega$ |
+| $L$ | $100\mathrm{mH}$ | $100\,\mathrm{mH}$ |
+| $C$ | $1\mu\mathrm{F}$ | $1000\,\mu\mathrm{F}$ |
+| $R_2$ | $100\mathrm{k}\Omega$ | $1\,\mathrm{k}\Omega$ |
 
 La entrada aplicada al sistema es un escalón unitario $V_e(t) = u(t)$, y la señal de error utilizada para el diseño del controlador se define como:
 
